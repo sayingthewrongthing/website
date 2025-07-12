@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Your Purposeful Action</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 30px 15px 0 15px; /* top, right, bottom, left */
+      background-color: transparent;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      box-sizing: border-box;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 600px;
+      box-sizing: border-box;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+    }
+
+    h2 {
+      text-align: center;
+      color: #336569;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 20px;
+      color: #336569;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      font-size: 1rem;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: vertical;
+      background-color: white;
+      box-sizing: border-box;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      background-color: #336569;
+      color: white;
+      font-size: 1.2rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #e68433;
+    }
+
+    @media (max-width: 600px) {
+      textarea {
+        height: 80px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding-bottom: 0px;
+      }
+
+      .form-container {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      body {
+        padding-bottom: 60px;
+      }
+
+      .form-container {
+        padding-bottom: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form
+    class="form-container"
+    action="https://formspree.io/f/mpwlaagv"
+    method="POST"
+  >
+    <h2>Submit your Purposeful Action</h2>
+
+    <label>
+      What I care about is:
+      <textarea name="what-i-care-about" required></textarea>
+    </label>
+
+    <label>
+      One thing I have been doing to control or avoid the situation is:
+      <textarea name="old-strategy" required></textarea>
+    </label>
+
+    <label>
+      I'm through with that! I'm committing to:
+      <textarea name="commitment" required></textarea>
+    </label>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
